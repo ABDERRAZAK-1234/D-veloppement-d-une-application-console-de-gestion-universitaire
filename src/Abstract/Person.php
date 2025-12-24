@@ -5,7 +5,6 @@ class Person
     private string $nom;
     private string $prenom;
     private string $role;
-
     private string $email;
     private string $telephone;
     private string $password;
