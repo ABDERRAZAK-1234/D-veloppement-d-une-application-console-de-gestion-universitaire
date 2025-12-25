@@ -7,11 +7,14 @@ class Formateur extends Person
 
     public function __construct($specialite)
     {
+        
         $this->specialite = $specialite;
     }
     
 
     
 }
+
+
 
 ?>
