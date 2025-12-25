@@ -1,30 +1,28 @@
 <?php
 
-class Person
+    abstract class Person
 {
-
-    private string $nom;
-    private string $prenom;
-    private string $role;
-    private string $email;
-    private string $telephone;
-    private string $password;
-    public function __construct($nom, $prenom, $role, $email, $telephone, $password)
+    protected string $nom;
+    protected string $prenom;
+    protected string $email;
+    protected string $telephone;
+    protected string $role;
+    public function __construct($nom, $prenom, $email, $telephone,$role)
     {
         $this->nom = $nom;
         $this->prenom = $prenom;
-        $this->role = $role;
         $this->email = $email;
         $this->telephone = $telephone;
-        $this->password = $password;
+        $this->role = $role;
     }
+    
 
-    public function setName($nom)
+    public function setName(string $nom)
     {
         $this->nom = $nom;
     }
 
-    public function getName($nom)
+    public function getName() : string
     {
         return $this->nom;
     }
@@ -33,34 +31,33 @@ class Person
         $this->prenom = $prenom;
     }
 
-    public function getPrenom($prenom)
+    public function getPrenom()
     {
         return $this->nom;
-    } public function setRole($role)
-    {
-        $this->role = $role;
-    }
-
-    public function getRole($role)
-    {
-        return $this->role;
     } 
-    public function setEmail($email)
+    public function setEmail(string $email)
     {
         $this->email = $email;
     }
-   public function getEmail($email)
+   public function getEmail(): string
     {
-       return $this->email = $email;
+       return $this->email;
+    }
+    public function setTelephone(string $telephone)
+    {
+        $this->telephone = $telephone;
+    }
+    public function getTelephone() : string{
+        return $this->telephone;
     }
 
-    public function getPassword($password)
+    public function setRole(string $role)
     {
-        return $this->password;
-    } 
-    public function setPassword($password)
+        $this->role=$role;
+    }
+    public function getRole():string
     {
-        $this->password = $password;
+        return $this->role;
     }
     
 
