@@ -1,8 +1,8 @@
 <?php   
 class Course {
     private string $nom ;
-    private object $formateur;
-    private object $departement;
+    private array $formateur;
+    private array $departement;
 
 
        public function __construct($nom,$formateur,$departement)

@@ -6,10 +6,13 @@ $conn = $db->getConnexion();
 ?>
 <?php 
  require "../Entity/Course.php";
+ require "../Entity/Formateur.php";
  echo "here";
-$test = new Course("php",["name_of_farmateur"=>"sara",],["name_of_Departement"=>'gen v']);
-echo"<pre>";
+$test = new Formateur('MOIUAD',);
+echo "<pre>"; 
 var_dump($test);
-echo"<pre>";
+echo "</pre>"; 
+
+
 
 ?>
