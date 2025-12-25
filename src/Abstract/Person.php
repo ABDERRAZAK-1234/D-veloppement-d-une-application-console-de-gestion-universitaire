@@ -1,17 +1,19 @@
 <?php
 
- abstract class Person
+    abstract class Person
 {
     protected string $nom;
     protected string $prenom;
     protected string $email;
     protected string $telephone;
-    public function __construct($nom, $prenom, $email, $telephone,)
+    protected string $role;
+    public function __construct($nom, $prenom, $email, $telephone,$role)
     {
         $this->nom = $nom;
         $this->prenom = $prenom;
         $this->email = $email;
         $this->telephone = $telephone;
+        $this->role = $role;
     }
     
 
@@ -47,6 +49,15 @@
     }
     public function getTelephone() : string{
         return $this->telephone;
+    }
+
+    public function setRole(string $role)
+    {
+        $this->role=$role;
+    }
+    public function getRole():string
+    {
+        return $this->role;
     }
     
 
