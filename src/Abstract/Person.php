@@ -33,13 +33,20 @@
     {
         return $this->nom;
     } 
-    public function setEmail($email)
+    public function setEmail(string $email)
     {
         $this->email = $email;
     }
-   public function getEmail($email)
+   public function getEmail(): string
     {
-       return $this->email = $email;
+       return $this->email;
+    }
+    public function setTelephone(string $telephone)
+    {
+        $this->telephone = $telephone;
+    }
+    public function getTelephone() : string{
+        return $this->telephone;
     }
     
 
