@@ -7,7 +7,7 @@ class Formateur extends Person
 
     public function __construct($nom, $prenom, $role, $email, $telephone, $password,$specialite)
     {
-        parent :: __construct($nom, $prenom, $role, $email, $telephone, $password);
+        
         $this->specialite = $specialite;
     }
 
@@ -20,5 +20,7 @@ class Formateur extends Person
 
     
 }
+
+
 
 ?>
