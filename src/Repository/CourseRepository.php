@@ -1,5 +1,6 @@
 <?php 
-require "../Database/DatabaseConnection.php";
+
+
 
 class UserRepository extends DatabaseConnection{
 
@@ -7,7 +8,7 @@ class UserRepository extends DatabaseConnection{
         $stmt = $this->conn->prepare("INSERT INTO users VALUES (?, ?, ?, ?, ?)");
         $stmt ->execute([
             
-        ])
+        ]);
 
     }
 

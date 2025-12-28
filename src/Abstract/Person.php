@@ -13,18 +13,18 @@ abstract class Person
     {
         $this->nom = $nom;
         $this->prenom = $prenom;
-        $this->role = $role;
         $this->email = $email;
         $this->telephone = $telephone;
     
     }
+    
 
-    public function setName($nom)
+    public function setName(string $nom)
     {
         $this->nom = $nom;
     }
 
-    public function getName($nom)
+    public function getName() : string
     {
         return $this->nom;
     }
@@ -33,28 +33,31 @@ abstract class Person
         $this->prenom = $prenom;
     }
 
-    public function getPrenom($prenom)
+    public function getPrenom()
     {
-        return $this->nom;
-    } public function setRole($role)
-    {
-        $this->role = $role;
-    }
-
-    public function getRole($role)
-    {
-        return $this->role;
+        return $this->prenom;
     } 
-    public function setEmail($email)
+    public function setEmail(string $email)
     {
         $this->email = $email;
     }
-   public function getEmail($email)
+   public function getEmail(): string
     {
-       return $this->email = $email;
+       return $this->email;
+    }
+    public function setTelephone(string $telephone)
+    {
+        $this->telephone = $telephone;
+    }
+    public function getTelephone() : string{
+        return $this->telephone;
     }
 
     
+    public function toString(): string
+    {
+        return "Nom: {$this->nom}, Prenom: {$this->prenom}, Email: {$this->email}, Telephone: {$this->telephone}, Role: {$this->role}";
+    }
 
 }
 

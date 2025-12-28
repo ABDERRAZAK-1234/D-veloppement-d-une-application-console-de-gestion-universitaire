@@ -1,6 +1,6 @@
 <?php
 
-require "../abstract/Person.php";
+
 class User extends Person
 {
 
