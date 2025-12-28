@@ -7,7 +7,7 @@ class Formateur extends Person
     protected string $specialite;
     protected array $course;
 
-    public function __construct($nom, $prenom, $role, $email, $telephone, $password,$specialite,$course)
+    public function __construct($nom, $prenom, $role, $email, $telephone,$specialite,$course)
     {
         parent::__construct($nom, $prenom, $role, $email, $telephone);
 

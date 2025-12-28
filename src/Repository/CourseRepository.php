@@ -1,5 +1,4 @@
 <?php 
-require "../Database/DatabaseConnection.php";
 
 class UserRepository extends DatabaseConnection{
 
