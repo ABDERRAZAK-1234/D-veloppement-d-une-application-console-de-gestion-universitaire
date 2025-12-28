@@ -1,6 +1,6 @@
 <?php
 
-class Person
+abstract class Person
 {
 
     private string $nom;
@@ -8,15 +8,15 @@ class Person
     private string $role;
     private string $email;
     private string $telephone;
-    private string $password;
-    public function __construct($nom, $prenom, $role, $email, $telephone, $password)
+   
+    public function __construct($nom, $prenom, $role, $email, $telephone)
     {
         $this->nom = $nom;
         $this->prenom = $prenom;
         $this->role = $role;
         $this->email = $email;
         $this->telephone = $telephone;
-        $this->password = $password;
+    
     }
 
     public function setName($nom)
@@ -54,14 +54,6 @@ class Person
        return $this->email = $email;
     }
 
-    public function getPassword($password)
-    {
-        return $this->password;
-    } 
-    public function setPassword($password)
-    {
-        $this->password = $password;
-    }
     
 
 }

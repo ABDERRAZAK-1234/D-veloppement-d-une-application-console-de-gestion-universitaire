@@ -1,15 +1,21 @@
 <?php 
-require_once '../Database/DatabaseConnection.php';
+require '../Database/DatabaseConnection.php';
+include 'src/Repository/UserRepository.php';
 $db = new DatabaseConnection();
 $conn = $db->getConnexion();
 
 ?>
 <?php 
  require "../Entity/Course.php";
+ require "../Entity/user.php";
+ require "../Entity/Formateur.php";
  echo "here";
-$test = new Course("php",["name_of_farmateur"=>"sara",],["name_of_Departement"=>'gen v']);
-echo"<pre>";
+//  $nom, $prenom, $role, $email, $telephone,$specialite,$titrecours,$formateur,$depatement
+$test = new Formateur('MOUAD','sertati','admine','mouad@gmail.com','06736733','onizuka',["php",'js,java']);
+echo "<pre>"; 
 var_dump($test);
-echo"<pre>";
+echo "</pre>"; 
+
+
 
 ?>
