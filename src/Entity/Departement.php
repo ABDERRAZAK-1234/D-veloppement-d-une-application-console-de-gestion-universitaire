@@ -1,5 +1,5 @@
 <?php 
-
+namespace Entity;
   class Departement {
     private string $nom;
    private string $numero_Departement ;

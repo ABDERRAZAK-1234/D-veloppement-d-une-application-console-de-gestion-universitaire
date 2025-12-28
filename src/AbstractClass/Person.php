@@ -1,5 +1,5 @@
 <?php
-
+namespace AbstractClass;
     abstract class Person
 {
     protected string $nom;

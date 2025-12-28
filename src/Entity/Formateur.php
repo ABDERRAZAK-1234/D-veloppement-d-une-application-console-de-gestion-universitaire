@@ -1,6 +1,7 @@
 <?php 
 
-require_once '../Abstract/Person.php';
+namespace Entity;
+use AbstractClass\Person;
 class Formateur extends Person
 {
     public string $specialite;
@@ -12,11 +13,6 @@ class Formateur extends Person
     }
 
 
-    // public function toString()
-    // {
-    //     parent :: toString().
-    //     "";
-    // }
 
     
 }
