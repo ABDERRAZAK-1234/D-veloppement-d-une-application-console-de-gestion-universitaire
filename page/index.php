@@ -1,7 +1,7 @@
 <?php 
 require '../src/Database/DatabaseConnection.php';
 include '../src/Repository/CourseRepository.php';
-$db = new DatabaseConnection();
+// $db = new DatabaseConnection();
 $conn = $db->getConnexion();
 
 ?>

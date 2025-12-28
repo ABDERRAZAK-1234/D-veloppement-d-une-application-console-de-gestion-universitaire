@@ -1,5 +1,6 @@
 <?php 
-require_once '../Abstract/Person.php';
+namespace Entity;
+use AbstractClass\Person;
 class Etudiant extends Person
 {
     protected string $cne;
