@@ -16,11 +16,6 @@ class Formateur extends Person
     }
 
 
-    // public function toString()
-    // {
-    //     parent :: toString().
-    //     "";
-    // }
 
 }
 
