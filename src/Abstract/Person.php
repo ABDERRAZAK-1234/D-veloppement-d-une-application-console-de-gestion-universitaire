@@ -33,7 +33,7 @@
 
     public function getPrenom()
     {
-        return $this->nom;
+        return $this->prenom;
     } 
     public function setEmail(string $email)
     {
@@ -60,6 +60,10 @@
         return $this->role;
     }
     
+    public function toString(): string
+    {
+        return "Nom: {$this->nom}, Prenom: {$this->prenom}, Email: {$this->email}, Telephone: {$this->telephone}, Role: {$this->role}";
+    }
 
 }
 
