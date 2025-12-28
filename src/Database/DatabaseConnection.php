@@ -1,7 +1,7 @@
 <?php
 class DatabaseConnection
 {
-    private PDO $conn;
+    protected PDO $conn;
     private string $host = "localhost";
     private string $db_name = "application_console_gestion_universitaire";
     private string $username = "root";
