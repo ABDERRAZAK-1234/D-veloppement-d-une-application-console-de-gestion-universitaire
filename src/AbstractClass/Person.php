@@ -1,5 +1,6 @@
 <?php
 
+namespace AbstractClass;
 abstract class Person
 {
 

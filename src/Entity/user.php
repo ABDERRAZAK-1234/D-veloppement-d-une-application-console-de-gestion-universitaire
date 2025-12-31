@@ -1,5 +1,6 @@
 <?php
-
+namespace Entity;
+use AbstractClass\Person;
 
 class User extends Person
 {
