@@ -1,6 +1,7 @@
 <?php
+namespace Entity;
+use AbstractClass\Person;
 
-require "../abstract/Person.php";
 class User extends Person
 {
 

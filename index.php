@@ -21,11 +21,18 @@ spl_autoload_register('Autoloader');
 // use GestionUniversitaire\Entity\Department;
 use Database\DatabaseConnection;
 use AbstractClass\Person;
-// use Entity\Formateur;
+use Entity\Formateur;
 use Entity\Etudiant;
+use Entity\Course;
 
-$etud = new Etudiant('aamaich', 'abderrazak','aamaich@gmail.com', '0766428735','Etudiant','JA187960');
-var_dump($etud);
+
+ echo "\n===== MENU =====\n";
+    echo "1. Create\n";
+    echo "2. Read\n";
+    echo "3. Update\n";
+    echo "4. Delete\n";
+    echo "5. Exit\n";
+
 $db = new DatabaseConnection();
 $conn = $db->getConnexion();
 

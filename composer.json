@@ -1,7 +1,7 @@
 {
     "autoload": {
         "psr-4": {
-            "Abstract\\": "src/Abstract/",
+            "Abstract\\": "src/Abstract/Person.php",
             "Entity\\": "src/Entity/",
             "Interface\\": "src/Interface/",
             "Repository\\": "src/Repository/",
