@@ -1,4 +1,5 @@
 <?php   
+namespace Entity;
 class Course {
     private string $nom ;
     private object $formateur;
