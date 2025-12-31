@@ -1,6 +1,5 @@
 <?php
 
-// auto load
 function Autoloader($class) {
     $class = str_replace('\\', '/', $class);
 
@@ -18,15 +17,20 @@ function Autoloader($class) {
 spl_autoload_register('Autoloader');
 
 // Utilisation des classes 
-// use GestionUniversitaire\Entity\Department;
 use Database\DatabaseConnection;
 use AbstractClass\Person;
-// use Entity\Formateur;
+use Entity\Formateur;
 use Entity\Etudiant;
 
-$etud = new Etudiant('aamaich', 'abderrazak','aamaich@gmail.com', '0766428735','Etudiant','JA187960');
-var_dump($etud);
 $db = new DatabaseConnection();
 $conn = $db->getConnexion();
+echo '<br>';
+
+$etud = new Etudiant('aamaich', 'abderrazak','aamaich@gmail.com', '0766428735','Etudiant','JA187960');
+// var_dump($etud);
+echo $etud->setEmail("ahmed@gmail.com");
+echo $etud->getEmail();
+
+
 
 ?>
